@@ -1,0 +1,14 @@
+11.24-----------------------------------------
+- async, defer
+- 'use strict' (ES5쓸때 사용)
+
+
+11.25--------------------------------------------
+- 1. use strict
+- 2. Variable - let
+- 3. Contants - const
+- 4. Variable types
+      - primitive : number, string, boolean, null, undefined, symbol
+      - object, box container
+      - function, first-class function
+- 5. Dynamic typing : dynamically typed language
