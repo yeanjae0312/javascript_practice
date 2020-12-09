@@ -3,7 +3,7 @@
 // use this for Valina Javascript.
 'use strict';
 
-// 2.Variable
+// 2.Variable, rw(read/write)
 // let (added in ES6)
 let globalName = 'global name';
 {
@@ -24,7 +24,7 @@ console.log(globalName);
 }
 console.log(age);
 
-// 3. Constants
+// 3. Constant, r(read only)
 // favor immutable data type always for a few reasons;
 // - security
 // - thread safety

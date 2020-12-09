@@ -12,3 +12,52 @@
       - object, box container
       - function, first-class function
 - 5. Dynamic typing : dynamically typed language
+
+11.27----------------------------------------------
+-operator(연산)
+
+12.08-------------------------------------------
+-함수(Function)
+- 1. 함수 선언
+- 2. 파라미터
+- 3. 기본 파라미터
+- 4. Rest 파라미터(배열) > ...
+- 5. 지역변수, 전역변수
+- 6. return
+- 7. Early return, early exit
+- 8. 함수 expresstion
+- 9. 콜백 함수
+- 10. Arrow Function !!
+- 11. IIFE -> 함수를 괄호로 묶고 괄호를 쓴다음 ;
+- 12. 계산기문제
+
+
+12.09-----------------------------------------
+- 1. 클래스 선언
+- 2. 게터와 세터(Getter and Setter)
+- 3. 필드
+- 4. Static
+- 5. Inheritance 상속, 다향성
+- 6. 클래스 체킹 instanceOf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
