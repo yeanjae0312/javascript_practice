@@ -10,12 +10,12 @@ imgDino.src = 'dinosaur.png';
 
 // 공룡 object
 let dino = {
-    x : 10, //등장할 좌표 x
+    x : 70, //등장할 좌표 x
     y : 200, //등장할 좌표 y
     width : 64, 
     height : 64,
     draw() {
-        ctx.fillStyle = 'green';
+        // ctx.fillStyle = 'green';
         // ctx.fillRect(this.x, this.y, this.width, this.height); // hitbox
         ctx.drawImage(imgDino, this.x, this.y);
     }
@@ -34,7 +34,7 @@ class Cactus {
         this.height = 64;
     }
     draw() {
-        ctx.fillStyle = 'red';
+        // ctx.fillStyle = 'red';
         // ctx.fillRect(this.x, this.y, this.width, this.height); // hitbox
         ctx.drawImage(imgCactus, this.x, this.y);
     }
@@ -56,7 +56,7 @@ function createGame() {
         let cactus = new Cactus();
         cactusArray.push(cactus); //장애물이 생길때마다 배열에 담아준다.
     }
-    cactusArray.forEach((a, i, o) => { //배열에 있던 장애물들을 모두 draw 해준다.
+    cactusArray.forEach((a, i, o) => { //배열에 있던 장애물들을 모두 draw 해준다. forEach(currentValue, index, array)
         // x좌표가 0 미만이면 장애물 제거
         if(a.x < 0) {
             o.splice(i,1);
