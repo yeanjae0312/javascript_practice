@@ -32,11 +32,11 @@ function onMouseMove(event) {
     const x = event.offsetX; //캔버스 안에서의 좌표를 가져오기 위해 offset사용
     const y = event.offsetY;
     if(!painting) {
-        ctx.beginPath();
-        ctx.moveTo(x, y);
+        ctx.beginPath(); // 하위 경로 목록을 비워 새 경로를 시작
+        ctx.moveTo(x, y); // 주어진 좌표로 지정된 지점에서 새로운 하위 경로를 시작
     } else {
-        ctx.lineTo(x, y);
-        ctx.stroke();
+        ctx.lineTo(x, y); // 하위 경로의 마지막 지점을 지정된 좌표에 연결하여 현재 하위 경로에 직선을 추가
+        ctx.stroke(); // 선의 종류를 지정
     }
 }
 
@@ -54,10 +54,10 @@ function handleRangeChange(event) {
 function handleModeClick() {
     if(filling === true) {
         filling = false;
-        mode.innerText = 'Fill';
+        mode.innerText = 'Paint';
     } else {
         filling = true;
-        mode.innerText = 'Paint';
+        mode.innerText = 'FILL';
     }
 }
 
@@ -72,7 +72,7 @@ function handleCM(event) {
 }
 
 function handleSaveClick(event) {
-    const image = canvas.toDataURL('image/png');
+    const image = canvas.toDataURL('image/png'); // 지정된 형식의 이미지 표현을 포함하는 데이터 URL 타입을 반환
     const link = document.createElement('a');
     link.href = image;
     link.download = 'PaintJS[EXPort]';
